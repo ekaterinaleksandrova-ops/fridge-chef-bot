@@ -19,8 +19,8 @@ except Exception:
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 USE_OPENAI = OPENAI_API_KEY is not None
 if USE_OPENAI:
-    import openai
-    openai.api_key = OPENAI_API_KEY
+    import os
+    openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(page_title="AI Кухонный Ассистент — Demo", layout="wide")
 st.title("AI Кухонный Ассистент — прототип")
