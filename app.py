@@ -171,5 +171,5 @@ def local_recipe_generator(ingredients, max_recipes, dietary, time_limit):
     return "\n".join(chosen)
 
 
----
+
 
